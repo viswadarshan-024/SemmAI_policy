@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>செம்மை (SemmAI) - Privacy Policy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+            background: white;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1e40af;
+            text-shadow: none;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .policy-card {
+            background: white;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .policy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1e40af, #3b82f6);
+            border-radius: 12px 12px 0 0;
+        }
+
+        .policy-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .policy-card h2 {
+            color: #1e293b;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .policy-card h3 {
+            color: #334155;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 30px 0 16px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-card p {
+            margin-bottom: 16px;
+            color: #475569;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .policy-card ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .policy-card li {
+            margin-bottom: 8px;
+            color: #64748b;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            border-radius: 10px;
+            padding: 28px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            color: #1e293b !important;
+            margin-bottom: 12px !important;
+        }
+
+        .contact-emails {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .email-link {
+            color: #1e40af;
+            text-decoration: none;
+            padding: 12px 20px;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+
+        .email-link:hover {
+            background: #1e40af;
+            color: white;
+            border-color: #1e40af;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+        }
+
+        .acknowledgment {
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border: 1px solid #a7f3d0;
+            color: #064e3b;
+            border-radius: 10px;
+            padding: 28px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .acknowledgment h3 {
+            color: #065f46 !important;
+            margin-bottom: 12px !important;
+        }
+
+        .contributor {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 12px;
+            color: #047857;
+        }
+
+        .language-toggle {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 10px 18px;
+            cursor: pointer;
+            font-weight: 500;
+            color: #374151;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            z-index: 1000;
+        }
+
+        .language-toggle:hover {
+            background: #f9fafb;
+            border-color: #9ca3af;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        }
+
+        .section-icon {
+            color: #3b82f6;
+            font-size: 1.1rem;
+        }
+
+        .academic-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            color: #92400e;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 8px;
+            border: 1px solid #f59e0b;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .policy-card {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .policy-card:nth-child(1) { animation-delay: 0.1s; }
+        .policy-card:nth-child(2) { animation-delay: 0.2s; }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .policy-card {
+                padding: 25px;
+            }
+            
+            .contact-emails {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-toggle {
+                position: static;
+                margin: 20px auto;
+                display: block;
+            }
+
+            .header {
+                padding: 40px 20px 30px;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 50px;
+            background: white;
+            border-radius: 12px;
+        }
+
+        .research-info {
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            border: 1px solid #93c5fd;
+            color: #1e40af;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+            margin: 25px 0;
+        }
+
+        /* Academic styling for professional look */
+        .academic-header {
+            border-left: 4px solid #1e40af;
+            padding-left: 16px;
+            margin: 20px 0;
+        }
+
+        .version-info {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            background: #f1f5f9;
+            color: #64748b;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <button class="language-toggle" onclick="toggleLanguage()">
+        <i class="fas fa-language"></i> <span id="langText">தமிழ்</span>
+    </button>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">🔒 செம்மை (SemmAI)</div>
+            <div class="subtitle">Bilingual Tamil-English Paraphrasing Assistant</div>
+            <div class="academic-badge">Academic Research Project</div>
+            <div class="research-info">
+                <i class="fas fa-graduation-cap"></i> 
+                Developed as part of academic research in Natural Language Processing and Tamil Language Technology
+            </div>
+        </div>
+
+        <div id="english-content">
+            <div class="content-wrapper">
+                <div class="policy-card">
+                    <div class="version-info">v1.0</div>
+                    <div class="academic-header">
+                        <h2><i class="fas fa-shield-alt section-icon"></i> Privacy Policy</h2>
+                    </div>
+                    <p><strong>SemmAI</strong> is a bilingual Tamil-English paraphrasing assistant designed to help users detect and generate paraphrases using AI. As an academic research project, we deeply value your privacy and are committed to protecting your data with the highest standards.</p>
+                    
+                    <div class="divider"></div>
+                    
+                    <h3><i class="fas fa-database section-icon"></i> 1. Data Storage</h3>
+                    <p>Your inputs, paraphrase outputs, and feedback are not processed through our backend services. No personally identifiable information is collected or stored. This ensures complete privacy protection for research participants.</p>
+                    
+                    <h3><i class="fas fa-key section-icon"></i> 2. Permissions</h3>
+                    <p>No permissions are required for using SemmAI. The application operates without accessing device storage, contacts, or other sensitive information.</p>
+                </div>
+
+                <div class="policy-card">
+                    <h3><i class="fas fa-user-shield section-icon"></i> 3. No Third-Party Sharing</h3>
+                    <p>We do not share your input, usage, or feedback data with any third-party services. All AI processing is handled securely within our application infrastructure, maintaining academic research ethics and data protection standards.</p>
+                    
+                    <div class="contact-section">
+                        <h3><i class="fas fa-envelope section-icon"></i> 4. Contact Information</h3>
+                        <p>For research inquiries, feedback, technical issues, or academic collaboration:</p>
+                        <div class="contact-emails">
+                            <a href="mailto:muthiraitce@gmail.com" class="email-link">
+                                <i class="fas fa-envelope"></i> muthiraitce@gmail.com
+                            </a>
+                            <a href="mailto:viswadarshanrramiya@gmail.com" class="email-link">
+                                <i class="fas fa-envelope"></i> viswadarshanrramiya@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="acknowledgment">
+                        <h3><i class="fas fa-award section-icon"></i> Research Team</h3>
+                        <p>We acknowledge the dedicated research and development efforts by:</p>
+                        <div class="contributor">
+                            <i class="fas fa-user-graduate"></i> Viswadarshan R R (2022–26)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tamil-content" class="hidden">
+            <div class="content-wrapper">
+                <div class="policy-card">
+                    <div class="version-info">v1.0</div>
+                    <div class="academic-header">
+                        <h2><i class="fas fa-shield-alt section-icon"></i> தனியுரிமைக் கொள்கை</h2>
+                    </div>
+                    <p><strong>செம்மை (SemmAI)</strong> என்பது தமிழ் மற்றும் ஆங்கில மொழிகளுக்கிடையில் பரிமாற்றங்களை (பராபிரேஸ்) உருவாக்க மற்றும் கண்டறிய உதவும் செயற்கை நுண்ணறிவில் அடிப்படையாயுள்ள செயலியாகும். கல்வி ஆராய்ச்சி திட்டமாக, உங்கள் தனியுரிமையை எங்களால் மதிக்கப்படுகிறது மற்றும் உயர்ந்த தரத்துடன் பாதுகாக்க உறுதிபூண்டுள்ளோம்.</p>
+                    
+                    <div class="divider"></div>
+                    
+                    <h3><i class="fas fa-database section-icon"></i> 1. தரவு சேமிப்பு</h3>
+                    <p>உங்கள் உள்ளீடுகள், பரிமாற்ற வெளியீடுகள் மற்றும் கருத்துகள் எங்கள் பின்நிலை சேவைகள் வழியாக செயலாக்கப்படவில்லை. எவ்விதமான தனிப்பட்ட அடையாளத் தகவலும் சேகரிக்கப்படுவதில்லை அல்லது சேமிக்கப்படுவதில்லை. இது ஆராய்ச்சி பங்கேற்பாளர்களுக்கு முழுமையான தனியுரிமை பாதுகாப்பை உறுதி செய்கிறது.</p>
+                    
+                    <h3><i class="fas fa-key section-icon"></i> 2. அனுமதிகள்</h3>
+                    <p>செம்மை செயலியைப் பயன்படுத்துவதற்கு எந்தவிதமான அனுமதிகளும் தேவைப்படவில்லை. இந்த செயலி சாதன சேமிப்பு, தொடர்புகள் அல்லது பிற முக்கியமான தகவல்களை அணுகாமல் செயல்படுகிறது.</p>
+                </div>
+
+                <div class="policy-card">
+                    <h3><i class="fas fa-user-shield section-icon"></i> 3. மூன்றாம் தரப்பு பகிர்வு இல்லை</h3>
+                    <p>நீங்கள் வழங்கும் உள்ளீட்டு தகவல்கள், பயன்பாட்டு விவரங்கள் அல்லது கருத்துகள் எதுவும் மூன்றாம் தரப்பினருடன் பகிரப்படாது. செயலியின் அனைத்து செயற்கை நுண்ணறிவு செயலாக்கங்களும் பாதுகாப்பாக செயலியின் உள் அமைப்பிலேயே நடைபெறும், கல்வி ஆராய்ச்சி நெறிமுறைகள் மற்றும் தரவு பாதுகாப்பு தரங்களைப் பராமரிக்கின்றன.</p>
+                    
+                    <div class="contact-section">
+                        <h3><i class="fas fa-envelope section-icon"></i> 4. தொடர்புத் தகவல்</h3>
+                        <p>ஆராய்ச்சி விசாரணைகள், கருத்துகள், தொழில்நுட்ப சிக்கல்கள் அல்லது கல்வி ஒத்துழைப்புக்கு:</p>
+                        <div class="contact-emails">
+                            <a href="mailto:muthiraitce@gmail.com" class="email-link">
+                                <i class="fas fa-envelope"></i> muthiraitce@gmail.com
+                            </a>
+                            <a href="mailto:viswadarshanrramiya@gmail.com" class="email-link">
+                                <i class="fas fa-envelope"></i> viswadarshanrramiya@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="acknowledgment">
+                        <h3><i class="fas fa-award section-icon"></i> ஆராய்ச்சி குழு</h3>
+                        <p>அர்ப்பணிப்புள்ள ஆராய்ச்சி மற்றும் மேம்பாட்டு முயற்சிகளை நாங்கள் ஒப்புக்கொள்கிறோம்:</p>
+                        <div class="contributor">
+                            <i class="fas fa-user-graduate"></i> விஷ்வதர்ஷன் ஆர். ஆர் (2022–26)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© செம்மை (SemmAI) - Academic Research Project</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">Built for advancing Tamil-English Natural Language Processing Research</p>
+        </div>
+    </div>
+
+    <script>
+        let isEnglish = true;
+
+        function toggleLanguage() {
+            const englishContent = document.getElementById('english-content');
+            const tamilContent = document.getElementById('tamil-content');
+            const langText = document.getElementById('langText');
+
+            if (isEnglish) {
+                englishContent.classList.add('hidden');
+                tamilContent.classList.remove('hidden');
+                langText.textContent = 'English';
+                isEnglish = false;
+            } else {
+                tamilContent.classList.add('hidden');
+                englishContent.classList.remove('hidden');
+                langText.textContent = 'தமிழ்';
+                isEnglish = true;
+            }
+        }
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.policy-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                }, index * 150);
+            });
+        });
+    </script>
+</body>
+</html>
